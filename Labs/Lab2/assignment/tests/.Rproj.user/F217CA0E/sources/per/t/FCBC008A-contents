@@ -1,0 +1,33 @@
+# Lab 2 assignment: tests
+# Ruiyuan Li
+## ----------------------------
+
+
+source(file.path("R", "task3-5.r"))
+
+## Required correctness checks
+
+x_test <- c(0, 1)
+y_test <- c(0, 0.5, 2)
+
+expected <- matrix(
+  c(0, 0.5, 2,
+    1, 0.5, 1),
+  nrow = 2,
+  byrow = TRUE
+)
+
+
+
+
+Verify that:
+  
+  1. the Task 3 result equals `expected`;
+2. the Task 4 result equals `expected`;
+3. `as.matrix()` of the Task 5 result equals `expected`;
+4. the large results have dimensions `3000 x 5000`;
+5. every dense output entry is either `0` or at least `0.5`;
+6. distances exactly equal to `0.5` are preserved; and
+7. Task 5 has the same number of nonzero entries as Task 4.
+
+Use a numerical tolerance when comparing matrices.
