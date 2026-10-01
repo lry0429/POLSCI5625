@@ -26,11 +26,11 @@ kmeans_step <- function(x, centers) {
                       (x[, 2] - centers[j, 2])^2
   }
 
-  # which.min() chooses the first center when distances tie.
+  # which.min() chooses the smallest distance, and first center when distances tie.
   cluster <- apply(distances, 1, which.min)
 
   for (j in seq_len(k)) {
-    members <- x[cluster == j, , drop = FALSE]
+    members <- x[cluster == j, , drop = FALSE] # drop = F: 为了保证即使这个 cluster 只有一个 observation，R 也仍然把结果保留为 matrix，而不是自动变成 vector
     if (nrow(members) == 0L) {
       stop("Empty cluster: choose different starting centers.", call. = FALSE)
     }
@@ -40,7 +40,7 @@ kmeans_step <- function(x, centers) {
   list(
     cluster = cluster,
     centers = centers,
-    tot.withinss = sum((x - centers[cluster, , drop = FALSE])^2)
+    tot.withinss = sum((x - centers[cluster, , drop = FALSE])^2) # total within-cluster sum of squares
   )
 }
 
@@ -57,10 +57,10 @@ kmeans_hand <- function(x, centers, iter.max = 100L) {
     iter.max >= 1L, iter.max == floor(iter.max)
   )
 
-  previous_cluster <- integer(nrow(x))
-  objective <- numeric(iter.max)
-  steps <- vector("list", iter.max)  # Keep assignments and centers for plotting.
-  converged <- FALSE
+  previous_cluster <- integer(nrow(x)) # 生成一个长度和 observation 数量一样的 integer vector，初始值全是 0，用来记录上一轮每个 observation 属于哪个 cluster
+  objective <- numeric(iter.max) # 创建一个 numeric vector，用来记录每一轮的 tot.withinss
+  steps <- vector("list", iter.max)  # Keep assignments and centers for plotting. 创建一个 list，用来保存每一次 kmeans_step() 的完整结果
+  converged <- FALSE # 先假设：目前还没有收敛。
 
   for (iteration in seq_len(iter.max)) {
     fit <- kmeans_step(x, centers)
@@ -80,7 +80,7 @@ kmeans_hand <- function(x, centers, iter.max = 100L) {
     warning("Iteration limit reached; increase iter.max.", call. = FALSE)
   }
 
-  fit$size <- tabulate(fit$cluster, nbins = nrow(centers))
+  fit$size <- tabulate(fit$cluster, nbins = nrow(centers)) # 数每个 cluster 里有多少 observations
   fit$iter <- iteration
   fit$converged <- converged
   fit$steps <- steps[seq_len(iteration)]
@@ -100,7 +100,7 @@ kmeans_function <- function(x, centers, nstart = 1L, iter.max = 100L) {
   stats::kmeans(
     x,
     centers = centers,
-    nstart = nstart,
+    nstart = nstart, # 用多少组不同的初始 cluster centers 来重复运行 k-means，然后选结果最好的那一次。
     iter.max = iter.max,
     algorithm = "Lloyd"
   )
