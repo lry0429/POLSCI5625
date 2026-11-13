@@ -44,10 +44,10 @@ e_step <- function(x, proportions, means, variance) {
   # R recycles the n-vector down each column of the n by 3 matrix.
   shifted <- exp(log_joint - row_max)
   denominator <- rowSums(shifted)
-  log_density <- row_max + log(denominator)
+  log_density <- row_max + log(denominator) # gamma_ik
 
   list(
-    responsibilities = shifted / denominator,
+    responsibilities = shifted / denominator, # Bayes' rule
     loglik = sum(log_density)
   )
 }
@@ -72,7 +72,7 @@ m_step <- function(x, responsibilities) {
   }
 
   proportions <- effective_n / n
-  means <- colSums(responsibilities * x) / effective_n
+  means <- colSums(responsibilities * x) / effective_n # calculate mean for each class
   residuals <- outer(x, means, "-")
 
   # Keep responsibilities fixed. Pool across components using the new means.
@@ -101,7 +101,7 @@ em_mixture <- function(x, proportions, means, variance,
     length(tol) == 1L, is.finite(tol), tol > 0,
     length(iter.max) == 1L, is.finite(iter.max), iter.max >= 1L,
     iter.max == floor(iter.max), length(monotone_tol) == 1L,
-    is.finite(monotone_tol), monotone_tol >= 0
+    is.finite(monotone_tol), monotone_tol >= 0 # the likelihood need to be monotone
   )
 
   current <- e_step(x, proportions, means, variance)
@@ -119,7 +119,7 @@ em_mixture <- function(x, proportions, means, variance,
     )
 
     loglik[iteration + 1L] <- next_step$loglik
-    gain <- next_step$loglik - current$loglik
+    gain <- next_step$loglik - current$loglik # the likelihood need to be monotonously increasing
 
     if (gain < -monotone_tol) {
       stop("Observed-data log-likelihood decreased beyond rounding tolerance.",
@@ -139,7 +139,7 @@ em_mixture <- function(x, proportions, means, variance,
   }
 
   # Component labels are arbitrary. Align all outputs by increasing mean.
-  component_order <- order(updated$means)
+  component_order <- order(updated$means) # save the means to related classes
 
   list(
     proportions = updated$proportions[component_order],

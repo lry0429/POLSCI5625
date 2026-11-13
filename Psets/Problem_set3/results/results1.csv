@@ -1,0 +1,5 @@
+"n","even_r(n)","evenNumbers(n)"
+4,TRUE,TRUE
+7,FALSE,FALSE
+10,TRUE,TRUE
+15,FALSE,FALSE

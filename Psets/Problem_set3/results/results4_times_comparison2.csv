@@ -1,0 +1,201 @@
+"expr","time"
+"A %*% B",2633717
+"A %*% B",13694
+"multiplyCpp(A, B)",4540422
+"A %*% B",11890
+"multiplyCpp(A, B)",4668916
+"A %*% B",11562
+"multiplyCpp(A, B)",8280975
+"A %*% B",15457
+"multiplyCpp(A, B)",4718034
+"multiplyCpp(A, B)",8295325
+"multiplyCpp(A, B)",4784700
+"multiplyCpp(A, B)",8309101
+"A %*% B",20418
+"multiplyCpp(A, B)",4527876
+"multiplyCpp(A, B)",8039485
+"multiplyCpp(A, B)",4649933
+"multiplyCpp(A, B)",4705611
+"A %*% B",16482
+"multiplyCpp(A, B)",8166995
+"A %*% B",18204
+"multiplyCpp(A, B)",4594091
+"multiplyCpp(A, B)",8190160
+"A %*% B",15908
+"A %*% B",12218
+"multiplyCpp(A, B)",4582734
+"multiplyCpp(A, B)",8185158
+"A %*% B",19475
+"A %*% B",12505
+"A %*% B",12341
+"multiplyCpp(A, B)",4548622
+"multiplyCpp(A, B)",8200656
+"A %*% B",13776
+"multiplyCpp(A, B)",4685480
+"multiplyCpp(A, B)",4653131
+"A %*% B",3751172
+"multiplyCpp(A, B)",4523079
+"A %*% B",11603
+"multiplyCpp(A, B)",4609630
+"multiplyCpp(A, B)",8368182
+"A %*% B",17425
+"A %*% B",12546
+"A %*% B",12464
+"A %*% B",12546
+"A %*% B",11439
+"A %*% B",12382
+"multiplyCpp(A, B)",4602660
+"A %*% B",11562
+"A %*% B",12546
+"A %*% B",11275
+"A %*% B",11521
+"multiplyCpp(A, B)",8358014
+"multiplyCpp(A, B)",4517913
+"A %*% B",15293
+"A %*% B",12341
+"multiplyCpp(A, B)",8278761
+"A %*% B",16154
+"A %*% B",12833
+"A %*% B",12505
+"A %*% B",12710
+"multiplyCpp(A, B)",4615247
+"A %*% B",11562
+"multiplyCpp(A, B)",8164576
+"A %*% B",14350
+"multiplyCpp(A, B)",4716517
+"multiplyCpp(A, B)",8037927
+"A %*% B",12710
+"A %*% B",12464
+"A %*% B",11808
+"A %*% B",11521
+"A %*% B",12095
+"A %*% B",12464
+"multiplyCpp(A, B)",4778714
+"multiplyCpp(A, B)",4740338
+"multiplyCpp(A, B)",8094589
+"A %*% B",13038
+"A %*% B",12546
+"multiplyCpp(A, B)",4717255
+"multiplyCpp(A, B)",8154080
+"A %*% B",13858
+"A %*% B",11193
+"A %*% B",11152
+"multiplyCpp(A, B)",4772031
+"multiplyCpp(A, B)",8148176
+"A %*% B",13407
+"A %*% B",12587
+"A %*% B",11685
+"A %*% B",12054
+"multiplyCpp(A, B)",4764323
+"A %*% B",11931
+"multiplyCpp(A, B)",8168266
+"multiplyCpp(A, B)",4772523
+"A %*% B",12259
+"multiplyCpp(A, B)",8182862
+"multiplyCpp(A, B)",4753540
+"multiplyCpp(A, B)",8094056
+"A %*% B",13489
+"multiplyCpp(A, B)",4771826
+"A %*% B",11808
+"A %*% B",12382
+"A %*% B",11521
+"multiplyCpp(A, B)",8105249
+"multiplyCpp(A, B)",4754196
+"multiplyCpp(A, B)",4717009
+"A %*% B",11685
+"multiplyCpp(A, B)",8105167
+"A %*% B",12710
+"A %*% B",12464
+"A %*% B",11767
+"multiplyCpp(A, B)",4755836
+"A %*% B",11931
+"A %*% B",12505
+"multiplyCpp(A, B)",8128168
+"multiplyCpp(A, B)",4759526
+"multiplyCpp(A, B)",8281918
+"A %*% B",13653
+"A %*% B",12546
+"A %*% B",12177
+"A %*% B",12341
+"multiplyCpp(A, B)",4759895
+"multiplyCpp(A, B)",8152112
+"A %*% B",12751
+"A %*% B",12546
+"multiplyCpp(A, B)",4727587
+"multiplyCpp(A, B)",4716271
+"multiplyCpp(A, B)",8148258
+"A %*% B",12710
+"A %*% B",12628
+"multiplyCpp(A, B)",4760428
+"multiplyCpp(A, B)",8224436
+"A %*% B",13817
+"A %*% B",12751
+"multiplyCpp(A, B)",4751982
+"A %*% B",12136
+"A %*% B",11234
+"multiplyCpp(A, B)",8178393
+"A %*% B",13161
+"A %*% B",10947
+"A %*% B",11193
+"multiplyCpp(A, B)",4771416
+"multiplyCpp(A, B)",8194465
+"multiplyCpp(A, B)",4756246
+"A %*% B",12136
+"A %*% B",11316
+"A %*% B",11275
+"multiplyCpp(A, B)",8233661
+"A %*% B",12341
+"multiplyCpp(A, B)",4740707
+"multiplyCpp(A, B)",4743495
+"A %*% B",11521
+"A %*% B",11644
+"multiplyCpp(A, B)",8199262
+"A %*% B",12341
+"A %*% B",12423
+"multiplyCpp(A, B)",4733655
+"A %*% B",11070
+"multiplyCpp(A, B)",8205986
+"A %*% B",12792
+"multiplyCpp(A, B)",4627998
+"multiplyCpp(A, B)",7992294
+"multiplyCpp(A, B)",4720084
+"multiplyCpp(A, B)",8210742
+"A %*% B",17138
+"multiplyCpp(A, B)",4862805
+"multiplyCpp(A, B)",8211767
+"A %*% B",14104
+"multiplyCpp(A, B)",4794991
+"multiplyCpp(A, B)",8290282
+"multiplyCpp(A, B)",4797328
+"A %*% B",12792
+"multiplyCpp(A, B)",4810940
+"multiplyCpp(A, B)",8241369
+"A %*% B",12382
+"A %*% B",12341
+"multiplyCpp(A, B)",4778919
+"multiplyCpp(A, B)",8316399
+"multiplyCpp(A, B)",4852637
+"multiplyCpp(A, B)",8218983
+"A %*% B",14227
+"multiplyCpp(A, B)",4831891
+"A %*% B",12095
+"A %*% B",11357
+"multiplyCpp(A, B)",8135097
+"A %*% B",13161
+"multiplyCpp(A, B)",4864404
+"A %*% B",12546
+"multiplyCpp(A, B)",8335177
+"multiplyCpp(A, B)",4830579
+"multiplyCpp(A, B)",8279335
+"A %*% B",13284
+"multiplyCpp(A, B)",4811268
+"multiplyCpp(A, B)",4816926
+"A %*% B",12218
+"multiplyCpp(A, B)",57241453
+"multiplyCpp(A, B)",4754401
+"multiplyCpp(A, B)",8547639
+"A %*% B",14637
+"multiplyCpp(A, B)",4830374
+"multiplyCpp(A, B)",8467443
+"A %*% B",13899
+"multiplyCpp(A, B)",4818894
